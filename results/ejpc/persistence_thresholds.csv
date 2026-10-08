@@ -1,0 +1,4 @@
+"target_retained_benefit","minimum_persistence_1y","threshold_status","lower_search_bound","retained_benefit_at_lower_bound"
+0.5,1e-04,"at_or_below_lower_bound",1e-04,0.567529748641448
+0.75,0.300121304503691,"estimated",1e-04,0.567529748641448
+0.9,0.632507266947406,"estimated",1e-04,0.567529748641448

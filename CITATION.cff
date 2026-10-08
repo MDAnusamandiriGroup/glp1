@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this model, please cite the repository and its evidence sources."
+title: "GLP-1 persistence, re-initiation, and cardiovascular benefit model"
+type: software
+authors:
+  - family-names: "Anasanti"
+    given-names: "Mila Desi"
+version: 1.0.0
+license: MIT

@@ -1,0 +1,25 @@
+parameter,value,lower_95,upper_95,unit,role,status,source_id,notes
+cohort_size,100000,,,persons,initial condition,scenario,ASSUMPTION,Per-100000 standardization
+horizon_years,5,,,years,time horizon,scenario,ASSUMPTION,Primary policy horizon; also report 3.3167-year validation
+time_step_years,0.01923077,,,years,numerical output grid,assumption,ASSUMPTION,Weekly output; ODE solver uses adaptive internal steps
+select_followup_years,3.31666667,,,years,trial validation,direct,SELECT_NEJM,39.8 months divided by 12
+select_n_placebo,8801,,,persons,trial calibration,direct,SELECT_NEJM,Randomized placebo participants
+select_n_semaglutide,8803,,,persons,trial calibration,direct,SELECT_NEJM,Randomized semaglutide participants
+select_mace_events_placebo,701,,,events,baseline MACE rate,direct,SELECT_NCBI,First MACE in placebo group
+select_mace_events_semaglutide,569,,,events,treatment calibration,direct,SELECT_NEJM,First MACE in semaglutide group
+select_mace_py_placebo,28297,,,person-years,baseline MACE rate,direct,SELECT_NCBI,Observation time for primary endpoint in placebo group
+select_fatal_or_undetermined_first_mace,221,,,events,fatal first-MACE share,direct,SELECT_NCBI,CV death plus undetermined cause among first MACE components
+select_ncv_deaths_placebo,176,,,events,competing death rate,direct,SELECT_NCBI,Non-CV non-renal deaths competing with first MACE
+select_hr_itt,0.80,0.72,0.90,ratio,trial treatment-policy effect,direct,SELECT_NEJM,Not interpreted as a pure on-treatment effect
+select_treatment_discontinuation_total,0.267,,,probability,trial calibration,direct,SELECT_NEJM,Permanent premature discontinuation over mean 39.8-month follow-up
+hr_ncv_death_on,1.00,,,ratio,non-CV death effect,assumption,ASSUMPTION,Primary analysis does not attribute non-CV mortality benefit to treatment
+discontinue_probability_1y,0.648,0.644,0.652,probability,discontinuation,direct,JAMA_DISCONTINUE,No-diabetes subgroup
+restart_probability_1y,0.363,0.356,0.370,probability,re-initiation,direct,JAMA_DISCONTINUE,No-diabetes subgroup among discontinuers eligible for restart analysis
+restart_hr_per_1pct_regain,1.028,1.024,1.032,ratio,restart feedback,direct,JAMA_DISCONTINUE,Per 1 percentage-point body-weight regain after discontinuation
+rebound_plateau,0.753,0.689,0.816,fraction of lost weight,post-cessation rebound,direct,ECLINMED_REBOUND,Published nonlinear meta-regression
+rebound_k_week,0.0302,0.0202,0.0401,per week,post-cessation rebound,direct,ECLINMED_REBOUND,Exponential recovery rate constant
+effect_weight_exponent,1.0,0.5,1.5,dimensionless,CV-weight mapping,assumption,ASSUMPTION,Structural sensitivity range; 1 means proportional mapping
+on_treatment_weight_loss_pct,9.39,,,percent body weight,restart feedback,direct,SELECT_WEIGHT,Used only to translate regain fraction into body-weight percentage points
+n_rebound_stages,8,,,count,semi-Markov approximation,assumption,ASSUMPTION,Eight quarterly stages retain time-since-stop information
+stage_duration_years,0.25,,,years,semi-Markov approximation,assumption,ASSUMPTION,Mean duration per rebound stage before progression
+uptake_probability_1y,0.10,,,probability,policy uptake,scenario,ASSUMPTION,Varied in population scenarios; not an empirical estimate

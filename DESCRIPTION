@@ -1,0 +1,19 @@
+Package: glp1persistence
+Type: Project
+Title: Dynamic Model of GLP-1 Persistence and Cardiovascular Benefit
+Version: 1.0.0
+Authors@R: person("Mila Desi", "Anasanti", role = c("aut", "cre"))
+Description: Reproducible deterministic and probabilistic compartmental model
+    of GLP-1 treatment persistence, discontinuation, rebound, re-initiation,
+    and first major adverse cardiovascular events.
+License: MIT
+Encoding: UTF-8
+Imports:
+    deSolve,
+    dplyr,
+    ggplot2,
+    haven,
+    survey,
+    testthat,
+    tidyr,
+    tidyselect

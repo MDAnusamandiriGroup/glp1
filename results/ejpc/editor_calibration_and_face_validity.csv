@@ -1,0 +1,6 @@
+validation_type,quantity,model_estimate,published_benchmark,benchmark_source,interpretation,absolute_difference,relative_difference_percent,internal_nhanes_standard_error
+Calibration target,First-MACE risk: SELECT placebo arm (39.8 months),0.07965003976820816,0.07965003976820816,SELECT,Exact agreement expected because this is a calibration target,0,0.0,
+Calibration target,First-MACE risk: SELECT semaglutide arm (39.8 months),0.06463705554924458,0.06463705554924458,SELECT,Exact agreement expected because this is a calibration target,0,0.0,
+Derived calibration check,Crude SELECT risk ratio (not the time-to-event HR),0.8115131610398025,0.8115131610398025,SELECT,Derived from the two calibrated arm risks; not external validation,0,0.0,
+Independent population face-validity,US SELECT-eligible population: Lusk et al.,5106323.0,4473681.0,"Lusk et al., Am Heart J 2024; PMID 39182939",Independent estimate using different NHANES cycles and eligibility coding,632642,14.14141956031286,385000
+Independent population face-validity,US SELECT-eligible population: Yan et al.,5106323.0,3700000.0,"Yan et al., JACC Adv 2025; PMID 40402121",Independent estimate using different NHANES cycles and eligibility coding,1406323,38.00872972972973,385000

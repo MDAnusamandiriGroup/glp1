@@ -1,0 +1,5 @@
+scenario_label,structural_interpretation,first_mace_real_world,mace_prevented_real_world,excess_mace_vs_select_like,retained_vs_select_like_percent,incremental_loss_vs_select_like_percent
+Slower waning (eta=0.5),More cardiovascular protection retained for a given weight-regain fraction,9879.08724700021,1820.94800480246,282.078173393076,86.5870346114707,13.412965388529297
+Weight-linked waning (base case; eta=1.0),Cardiovascular protection wanes proportionally with remaining weight benefit,10106.9241546092,1593.11109719345,472.44136529655,77.1276027176271,22.8723972823729
+Faster waning (eta=1.5),Cardiovascular protection wanes faster than remaining weight benefit,10257.0599134937,1442.97533830899,601.161805669923,70.5909259835785,29.4090740164215
+Immediate loss of protection,No cardiovascular protection remains after discontinuation,10707.362854133,992.672397669638,1022.26671903757,49.2656274047552,50.73437259524481
